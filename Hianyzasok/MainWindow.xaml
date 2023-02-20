@@ -10,15 +10,21 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnRead" Content="Fájl beolvasás" HorizontalAlignment="Left" Margin="283,97,0,0" VerticalAlignment="Top" Height="74" Width="177" Click="btnRead_Click" RenderTransformOrigin="0.493,-0.381"/>
-        <Label x:Name="lblFeladat2" Content="2. Feladat" HorizontalAlignment="Left" Margin="81,230,0,0" VerticalAlignment="Top" Width="319" Height="52"/>
-        <Label Content="3. feladat" HorizontalAlignment="Left" Margin="81,312,0,0" VerticalAlignment="Top"/>
-        <Label Content="Kérem, adjon meg egy napot!" HorizontalAlignment="Left" Margin="110,357,0,0" VerticalAlignment="Top"/>
-        <Label Content="Kérem, adjon meg egy napot!" HorizontalAlignment="Left" Margin="110,357,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.536,2.151"/>
-        <Label Content="Tanuló neve:" HorizontalAlignment="Left" Margin="110,383,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbxNap" HorizontalAlignment="Left" Margin="314,370,0,0" TextWrapping="Wrap" Text="Nap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSearch" Content="Keresés" HorizontalAlignment="Left" Margin="491,379,0,0" VerticalAlignment="Top" Width="60" Click="btnSearch_Click"/>
-        <TextBox x:Name="tbxNev" HorizontalAlignment="Left" Margin="314,399,0,0" TextWrapping="Wrap" Text="Név" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnRead" Content="Fájl beolvasás" HorizontalAlignment="Left" Margin="286,26,0,0" VerticalAlignment="Top" Height="41" Width="176" Click="btnRead_Click" RenderTransformOrigin="0.493,-0.381"/>
+        <Label x:Name="lblFeladat2" Content="2. Feladat" HorizontalAlignment="Left" Margin="87,96,0,0" VerticalAlignment="Top" Width="319" Height="46"/>
+        <Label Content="3. feladat" HorizontalAlignment="Left" Margin="87,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kérem, adjon meg egy napot!" HorizontalAlignment="Left" Margin="116,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.536,2.151"/>
+        <Label Content="Tanuló neve:" HorizontalAlignment="Left" Margin="116,247,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxNap" HorizontalAlignment="Left" Margin="298,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" LostFocus="tbxNap_LostFocus"/>
+        <Button x:Name="btnSearch" Content="Keresés" HorizontalAlignment="Left" Margin="473,245,0,0" VerticalAlignment="Top" Width="60" Click="btnSearch_Click"/>
+        <TextBox x:Name="tbxNev" HorizontalAlignment="Left" Margin="298,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblFeladat4" Content="4. feladat" HorizontalAlignment="Left" Margin="87,289,0,0" VerticalAlignment="Top" Height="51" Width="287"/>
+        <Label Content="5. feladat" HorizontalAlignment="Left" Margin="87,351,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbxFeladat5" HorizontalAlignment="Left" Margin="165,351,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="297" Height="66"/>
+        <Button x:Name="btnFeladat5" Content="5. feladat" HorizontalAlignment="Left" Margin="503,364,0,0" VerticalAlignment="Top" Click="btnFeladat5_Click"/>
+        <Button x:Name="btnFeladat6" Content="6. feladat" HorizontalAlignment="Left" Margin="503,397,0,0" VerticalAlignment="Top" Click="btnFeladat6_Click"/>
+        <TextBox x:Name="tbxFeladat6" HorizontalAlignment="Left" Margin="594,245,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148" Height="172"/>
+        <Label Content="6. feladat" HorizontalAlignment="Left" Margin="594,214,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
