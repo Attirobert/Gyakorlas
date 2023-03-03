@@ -37,7 +37,9 @@ namespace Hianyzasok
                 M_Orak;
         }
 
-        string file = @"..\..\..\szeptember.csv";
+        string file = @"..\..\..\szeptember.csv",
+            outFile = @"..\..\..\osszesites.csv";
+
 
         // Diákok eltárolására
         List<hianyzok> adatok = new List<hianyzok>();
@@ -81,9 +83,9 @@ namespace Hianyzasok
             int mNap = Convert.ToInt32(tbxNap.Text);
             string mNev = tbxNev.Text;
 
-            // Mezők alaphelyzetbe állítása
-            tbxNap.Clear();
-            tbxNev.Clear();
+            // Mezők alaphelyzetbe állítása - nem kell, mert így kitörlöm a 6. feladat előtt
+            //tbxNap.Clear();
+            //tbxNev.Clear();
 
             if (adatok.Count(x => x.Nev == mNev) > 0)
             {
@@ -118,11 +120,6 @@ namespace Hianyzasok
 
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void btnFeladat5_Click(object sender, RoutedEventArgs e)
         {
             // Egy adott napon hiányzók kiszűrése
@@ -135,22 +132,35 @@ namespace Hianyzasok
             tbxFeladat5.Clear();
             if (eredm.Length > 0)
                 foreach (var item in eredm)
-                {
                     tbxFeladat5.Text += item.ToString() + "\n";
-                }
         }
 
         private void btnFeladat6_Click(object sender, RoutedEventArgs e)
         {
-            var eredm = adatok.Sum(x => x.Utolso) - adatok.Sum(x => x.Elso);
+            // Kiszedem az osztályokat és sorba rendezem
+            string[] osztalyok = adatok.Select(x => x.Osztaly).Distinct().ToArray();
+            Array.Sort(osztalyok);
 
-
+            // Külön tömbbe kigyüjtöm a hiányzásokat
             tbxFeladat6.Clear();
-            tbxFeladat6.Text = eredm.ToString();
-            //foreach (var item in eredm)
-            //{
-            //    tbxFeladat6.Text += item.ToString() + "\n";
-            //}
+            int[] osztHianyzas = new int[osztalyok.Length];
+            for (int i = 0; i < osztalyok.Length; i++)
+                for (int j = 0; j < adatok.Count; j++)
+                    if (adatok[j].Osztaly == osztalyok[i])
+                        osztHianyzas[i] += (adatok[j].M_Orak);
+
+            // Kiíratás képernyőre
+            for (int i = 0; i < osztalyok.Length; i++)
+                tbxFeladat6.Text += osztalyok[i] + ": " + Convert.ToString(osztHianyzas[i]) + "\n";
+
+            // Kiíratás fájlba
+            using (StreamWriter sw = new StreamWriter(outFile))
+            {
+                for (int i = 0; i < osztalyok.Length; i++)
+                    sw.WriteLine(osztalyok[i] + ": " + Convert.ToString(osztHianyzas[i]));
+
+                sw.Close();
+            }
         }
     }
 }
