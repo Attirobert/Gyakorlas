@@ -52,7 +52,7 @@ namespace _01_Tomb
 
 
             /* Azonnali futtatás */
-            // Az eredményhalmaz már a deklarációkor létre jön.
+            // Az eredményhalmaz már a deklarációkor létre jön a ToArray<>(T) bővítő metódus hatására.  Ilyen metódus még a ToList<T>(), ToDictionary<TSource, TKey>().  A generikus típusokat csak akkor kell megadni, ha a fordítónak nem egyértelmű az eredmény típusa.
             Console.WriteLine("*********************");
             Console.WriteLine("Azonnali futtatás");
             Console.WriteLine("*********************");

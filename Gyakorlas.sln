@@ -10,12 +10,15 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hianyzasok", "Hianyzasok\Hianyzasok.csproj", "{4B568B8D-7A3D-4D56-B254-B8D6CBF36440}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LINQ", "LINQ", "{F8601268-BAE2-4271-9D94-9DA6DEBFD12B}"
+	ProjectSection(SolutionItems) = preProject
+		Fejezet tartalma.txt = Fejezet tartalma.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-Tomb", "01-Tomb\01-Tomb.csproj", "{D9401C72-D8E0-49B6-8548-AD2D5823A99D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Generic", "02-Generic\02-Generic.csproj", "{179E619B-99B2-4686-A19C-FD159CA1C481}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hianyzas2", "Hianyzas2\Hianyzas2.csproj", "{A372E8A4-6E91-4C9E-A546-961EEC7D42CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hianyzas2", "Hianyzas2\Hianyzas2.csproj", "{A372E8A4-6E91-4C9E-A546-961EEC7D42CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
