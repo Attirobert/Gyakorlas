@@ -35,6 +35,13 @@ namespace _01_Tomb
                                          where g.Length > 6
                                          orderby g
                                          select g;
+            // Ugyanez lambda kifejezéssel
+            var subsetLambda = currentvideoGames
+                .Where(game => game.Length > 6)
+                .OrderBy(game => game)
+                .Select(game => game);
+
+
             // írjuk ki az eredményt.
             // Csak ekkor számítódik ki az eredmény!
             Console.WriteLine("*********************");
@@ -45,8 +52,13 @@ namespace _01_Tomb
                 Console.WriteLine("Játék: {0}", s);
             Console.WriteLine();
 
-            Console.WriteLine("Implicit típus megadással");
+            Console.WriteLine("Implicit típus megadással LINQ kifejezéssel");
             foreach (string s in subset2)
+                Console.WriteLine("Játék: {0}", s);
+            Console.WriteLine();
+
+            Console.WriteLine("Implicit típus megadással lambda kifejezéssel");
+            foreach (string s in subsetLambda)
                 Console.WriteLine("Játék: {0}", s);
             Console.WriteLine();
 
@@ -56,17 +68,18 @@ namespace _01_Tomb
             Console.WriteLine("*********************");
             Console.WriteLine("Azonnali futtatás");
             Console.WriteLine("*********************");
-
-            string[] subset3 = (from g in currentvideoGames where g.Length > 6 orderby g select g).ToArray();
-
             Console.WriteLine("Explicit típus megadással");
+
+            Console.WriteLine("Explicit típus megadással: string[]");
+            //Az adatokat pont MOST kapjuk meg egy int[] tömbbe.
+            string[] subset3 = (from g in currentvideoGames where g.Length > 6 orderby g select g).ToArray();
             foreach (string s in subset3)
                 Console.WriteLine("Játék: {0}", s);
             Console.WriteLine();
 
-            List<string> subset4 = (from g in currentvideoGames where g.Length > 6 orderby g select g).ToList<string>();
-
             Console.WriteLine("Explicit típus megadással: List<string>");
+            //Az adatokat pont MOST kapjuk meg egy List<string> listába.
+            List<string> subset4 = (from g in currentvideoGames where g.Length > 6 orderby g select g).ToList<string>();
             foreach (string s in subset4)
                 Console.WriteLine("Játék: {0}", s);
             Console.WriteLine();
