@@ -18,9 +18,9 @@ namespace Utems
         public string Szoveg;       // Mit kell kiírni
     }
 
-    public partial class FormMain : Form
+    public partial class frmMain : Form
     {
-        public FormMain()
+        public frmMain()
         {
             InitializeComponent();
         }
@@ -28,12 +28,15 @@ namespace Utems
         private string file = @"..\..\adatok.csv";
         private List<Utem> utems = new List<Utem>();
 
+        private const string OSZTALY = "Bemutató óra 11 / A";
+
         private void FormMain_Load(object sender, EventArgs e)
         {
+            
             #region Ütemezés beolvasása
             string[] darabol;
             Utem utem;
-            DateTime dt = DateTime.Today;   // Napi dátum
+            DateTime dt = new DateTime(2023, 03, 20);    // Napi dátum
 
             using (StreamReader sr = new StreamReader(file, Encoding.UTF8))
             {
@@ -42,8 +45,7 @@ namespace Utems
                 while (!sr.EndOfStream)
                 {
                     darabol = sr.ReadLine().Split(';');
-                    dt.AddHours(Convert.ToInt32(darabol[0]));
-                    dt.AddMinutes(Convert.ToInt32(darabol[1]));
+                    dt = dt.AddHours(Convert.ToDouble(darabol[0])).AddMinutes(Convert.ToDouble(darabol[1]));
                     utem.Idopont = dt;
                     utem.Szoveg = darabol[2];
 
@@ -57,20 +59,32 @@ namespace Utems
         private void btnStart_Click(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            btnStart.Enabled = false;
+            btnStop.Enabled = true;
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
             timer1.Enabled = false;
+            btnStart.Enabled = true;
+            btnStop.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (utems[0].Idopont <= DateTime.Now)
+            Text = OSZTALY + DateTime.Now.ToString();
+
+            if (DateTime.Compare(utems[0].Idopont,DateTime.Now) <= 0)
             {
-                MessageBox.Show(utems[0].Szoveg);
+                timer1.Enabled = false; // leállítom a timert, hogy addig ne menjen, amíg az üzenetet jóvá nem hagyom
+                MessageBox.Show(utems[0].Szoveg + " bejegyzés: " + utems.Count);
+                timer1.Enabled = true;  // újra indulhat a timer
                 utems.Remove(utems[0]);
-                if (utems.Count == 0) timer1.Enabled = false;
+                if (utems.Count == 0)
+                {
+                    timer1.Enabled = false;
+                    MessageBox.Show("Vége a feladatnak!");
+                }
             }
         }
     }
