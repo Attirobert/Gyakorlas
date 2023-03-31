@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32519.379
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lotto", "Lotto\Lotto.csproj", "{7404744E-725C-47BC-957E-EBB84E002F1E}"
 EndProject
@@ -40,13 +40,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utems", "Utems\Utems.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TDD", "TDD", "{90563412-D98C-4CB3-82A3-88D032BACE38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMath", "MyMath\MyMath.csproj", "{E3B65F7A-6564-4C28-A489-CEEA39022992}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMath", "MyMath\MyMath.csproj", "{E3B65F7A-6564-4C28-A489-CEEA39022992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathTests", "MathTests\MathTests.csproj", "{BCA61584-6ACE-4AF1-B812-F1FC758E33DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathTests", "MathTests\MathTests.csproj", "{BCA61584-6ACE-4AF1-B812-F1FC758E33DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegyzetTDD", "NegyzetTDD\NegyzetTDD.csproj", "{1FF5072F-28D4-4C65-B65E-6D436108D12C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegyzetTDD", "NegyzetTDD\NegyzetTDD.csproj", "{1FF5072F-28D4-4C65-B65E-6D436108D12C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NegyzetTDDTests", "NegyzetTDDTests\NegyzetTDDTests.csproj", "{A3EC765F-AA03-497A-8A2C-39A99BD27728}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegyzetTDDTests", "NegyzetTDDTests\NegyzetTDDTests.csproj", "{A3EC765F-AA03-497A-8A2C-39A99BD27728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6830EF92-5870-4F07-970D-7A1BE598FF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAsp", "FirstAsp\FirstAsp.csproj", "{AAF8D6FB-4B49-428F-BB83-210473DBD614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,6 +122,10 @@ Global
 		{A3EC765F-AA03-497A-8A2C-39A99BD27728}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3EC765F-AA03-497A-8A2C-39A99BD27728}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3EC765F-AA03-497A-8A2C-39A99BD27728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF8D6FB-4B49-428F-BB83-210473DBD614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF8D6FB-4B49-428F-BB83-210473DBD614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF8D6FB-4B49-428F-BB83-210473DBD614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF8D6FB-4B49-428F-BB83-210473DBD614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -136,6 +144,7 @@ Global
 		{BCA61584-6ACE-4AF1-B812-F1FC758E33DF} = {90563412-D98C-4CB3-82A3-88D032BACE38}
 		{1FF5072F-28D4-4C65-B65E-6D436108D12C} = {90563412-D98C-4CB3-82A3-88D032BACE38}
 		{A3EC765F-AA03-497A-8A2C-39A99BD27728} = {90563412-D98C-4CB3-82A3-88D032BACE38}
+		{AAF8D6FB-4B49-428F-BB83-210473DBD614} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCF25FFC-AE53-4BDA-8FE4-E42209FD25AE}
