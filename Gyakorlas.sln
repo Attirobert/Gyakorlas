@@ -52,9 +52,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{6830EF92-587
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspWeb01", "AspWeb01\AspWeb01.csproj", "{783FF447-9C52-4442-BA43-41D1F39825F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{DCF472E3-70EA-469B-BE19-F0CB5E3E8A26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\BlazorApp.csproj", "{DCF472E3-70EA-469B-BE19-F0CB5E3E8A26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{D861A5D9-1EC3-4923-9098-B424295BA705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{D861A5D9-1EC3-4923-9098-B424295BA705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerPizza", "BlazorServerPizza\BlazorServerPizza.csproj", "{85B45937-24DE-4557-836A-546901F189CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +140,10 @@ Global
 		{D861A5D9-1EC3-4923-9098-B424295BA705}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D861A5D9-1EC3-4923-9098-B424295BA705}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D861A5D9-1EC3-4923-9098-B424295BA705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B45937-24DE-4557-836A-546901F189CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B45937-24DE-4557-836A-546901F189CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B45937-24DE-4557-836A-546901F189CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B45937-24DE-4557-836A-546901F189CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,6 +165,7 @@ Global
 		{783FF447-9C52-4442-BA43-41D1F39825F9} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 		{DCF472E3-70EA-469B-BE19-F0CB5E3E8A26} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 		{D861A5D9-1EC3-4923-9098-B424295BA705} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
+		{85B45937-24DE-4557-836A-546901F189CA} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCF25FFC-AE53-4BDA-8FE4-E42209FD25AE}
