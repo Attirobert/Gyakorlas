@@ -56,7 +56,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorApp", "BlazorApp\Blaz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerApp", "BlazorServerApp\BlazorServerApp.csproj", "{D861A5D9-1EC3-4923-9098-B424295BA705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerPizza", "BlazorServerPizza\BlazorServerPizza.csproj", "{85B45937-24DE-4557-836A-546901F189CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerPizza", "BlazorServerPizza\BlazorServerPizza.csproj", "{85B45937-24DE-4557-836A-546901F189CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TutorialHU", "TutorialHU", "{4303164E-C2AC-48AF-84B1-6B22A06BB64D}"
+	ProjectSection(SolutionItems) = preProject
+		Tartalom.txt = Tartalom.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqLambdaTutorialHu", "LinqLambdaTutorialHu\LinqLambdaTutorialHu.csproj", "{93A9131E-7FEA-4B9C-A26C-8D13684E62BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -144,6 +151,10 @@ Global
 		{85B45937-24DE-4557-836A-546901F189CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85B45937-24DE-4557-836A-546901F189CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85B45937-24DE-4557-836A-546901F189CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A9131E-7FEA-4B9C-A26C-8D13684E62BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A9131E-7FEA-4B9C-A26C-8D13684E62BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A9131E-7FEA-4B9C-A26C-8D13684E62BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A9131E-7FEA-4B9C-A26C-8D13684E62BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +177,8 @@ Global
 		{DCF472E3-70EA-469B-BE19-F0CB5E3E8A26} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 		{D861A5D9-1EC3-4923-9098-B424295BA705} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
 		{85B45937-24DE-4557-836A-546901F189CA} = {6830EF92-5870-4F07-970D-7A1BE598FF89}
+		{4303164E-C2AC-48AF-84B1-6B22A06BB64D} = {F8601268-BAE2-4271-9D94-9DA6DEBFD12B}
+		{93A9131E-7FEA-4B9C-A26C-8D13684E62BE} = {4303164E-C2AC-48AF-84B1-6B22A06BB64D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCF25FFC-AE53-4BDA-8FE4-E42209FD25AE}

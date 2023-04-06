@@ -1,0 +1,2 @@
+Forrás:
+https://csharptutorial.hu/docs/hellovilag-hellocsharp/8-nyelvi-szolgaltatasok/linq-alap-muveletek/
