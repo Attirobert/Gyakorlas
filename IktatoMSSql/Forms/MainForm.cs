@@ -44,13 +44,13 @@ namespace IktatoMSSql
 
         private void iktatásToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IktatForm frm = new IktatForm();
+            IktatasGridForm frm = new IktatasGridForm();
             frm.ShowDialog();
         }
 
         private void iktatóLapToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IktatEgyesForm frm = new IktatEgyesForm();
+            IktatasTetelForm frm = new IktatasTetelForm();
             frm.ShowDialog();
         }
     }

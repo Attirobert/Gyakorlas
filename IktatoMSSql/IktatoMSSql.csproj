@@ -51,11 +51,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BeosztasokDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\IktatoGrid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IktatoGrid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSets\IktatoTetelDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IktatoTetelDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BeosztasokForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\BeosztasokForm.Designer.cs">
       <DependentUpon>BeosztasokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IktatasGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IktatasGridForm.Designer.cs">
+      <DependentUpon>IktatasGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IktatasTetelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\IktatasTetelForm.Designer.cs">
+      <DependentUpon>IktatasTetelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
@@ -101,6 +123,12 @@
     <EmbeddedResource Include="Forms\BeosztasokForm.resx">
       <DependentUpon>BeosztasokForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IktatasGridForm.resx">
+      <DependentUpon>IktatasGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\IktatasTetelForm.resx">
+      <DependentUpon>IktatasTetelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +160,28 @@
     </None>
     <None Include="DataSets\BeosztasokDS.xss">
       <DependentUpon>BeosztasokDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\IktatoGrid.xsc">
+      <DependentUpon>IktatoGrid.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\IktatoGrid.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IktatoGrid.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\IktatoGrid.xss">
+      <DependentUpon>IktatoGrid.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\IktatoTetelDS.xsc">
+      <DependentUpon>IktatoTetelDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\IktatoTetelDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IktatoTetelDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSets\IktatoTetelDS.xss">
+      <DependentUpon>IktatoTetelDS.xsd</DependentUpon>
     </None>
     <None Include="DataSets\OsztalyokDS.xsc">
       <DependentUpon>OsztalyokDS.xsd</DependentUpon>
