@@ -16,5 +16,20 @@ namespace IktatoMSSql.Forms
         {
             InitializeComponent();
         }
+
+        private void beosztasokBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.beosztasokBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.beosztasokDS);
+
+        }
+
+        private void BeosztasokForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'beosztasokDS.Beosztasok' table. You can move, or remove it, as needed.
+            this.beosztasokTableAdapter.Fill(this.beosztasokDS.Beosztasok);
+
+        }
     }
 }

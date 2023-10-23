@@ -51,26 +51,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BeosztasokDS.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataSets\IktatDS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IktatDS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSets\IktatEgyesDS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>IktatEgyesDS.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\BeosztasokForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\BeosztasokForm.Designer.cs">
+      <DependentUpon>BeosztasokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSets\OsztalyokDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OsztalyokDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OsztalyokForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OsztalyokForm.Designer.cs">
+      <DependentUpon>OsztalyokForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TemakForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TemakForm.Designer.cs">
+      <DependentUpon>TemakForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UsersForm.Designer.cs">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +98,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UsersDS.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\BeosztasokForm.resx">
+      <DependentUpon>BeosztasokForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OsztalyokForm.resx">
+      <DependentUpon>OsztalyokForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TemakForm.resx">
+      <DependentUpon>TemakForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UsersForm.resx">
+      <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,28 +132,6 @@
     </None>
     <None Include="DataSets\BeosztasokDS.xss">
       <DependentUpon>BeosztasokDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\IktatDS.xsc">
-      <DependentUpon>IktatDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\IktatDS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IktatDS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\IktatDS.xss">
-      <DependentUpon>IktatDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\IktatEgyesDS.xsc">
-      <DependentUpon>IktatEgyesDS.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\IktatEgyesDS.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>IktatEgyesDS.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DataSets\IktatEgyesDS.xss">
-      <DependentUpon>IktatEgyesDS.xsd</DependentUpon>
     </None>
     <None Include="DataSets\OsztalyokDS.xsc">
       <DependentUpon>OsztalyokDS.xsd</DependentUpon>

@@ -16,5 +16,20 @@ namespace IktatoMSSql.Forms
         {
             InitializeComponent();
         }
+
+        private void usersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.usersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.usersDS);
+
+        }
+
+        private void UsersForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'usersDS.Users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.usersDS.Users);
+
+        }
     }
 }
