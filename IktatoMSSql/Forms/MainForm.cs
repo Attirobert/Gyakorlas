@@ -53,5 +53,11 @@ namespace IktatoMSSql
             IktatasTetelForm frm = new IktatasTetelForm();
             frm.ShowDialog();
         }
+
+        private void tesztToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Teszt frm = new Teszt();
+            frm.ShowDialog();
+        }
     }
 }

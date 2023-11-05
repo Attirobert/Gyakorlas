@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSets\BeosztasTesztDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeosztasTesztDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSets\BeosztasokDS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -102,6 +107,12 @@
     <Compile Include="Forms\TemakForm.Designer.cs">
       <DependentUpon>TemakForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Teszt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Teszt.Designer.cs">
+      <DependentUpon>Teszt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +149,9 @@
     <EmbeddedResource Include="Forms\TemakForm.resx">
       <DependentUpon>TemakForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Teszt.resx">
+      <DependentUpon>Teszt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\UsersForm.resx">
       <DependentUpon>UsersForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +164,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSets\BeosztasTesztDS.xsc">
+      <DependentUpon>BeosztasTesztDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\BeosztasTesztDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BeosztasTesztDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\BeosztasTesztDS.xss">
+      <DependentUpon>BeosztasTesztDS.xsd</DependentUpon>
+    </None>
     <None Include="DataSets\BeosztasokDS.xsc">
       <DependentUpon>BeosztasokDS.xsd</DependentUpon>
     </None>
