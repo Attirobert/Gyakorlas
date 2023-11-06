@@ -139,5 +139,8 @@
   <ItemGroup>
     <Folder Include="Classes\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBs\iktato.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
