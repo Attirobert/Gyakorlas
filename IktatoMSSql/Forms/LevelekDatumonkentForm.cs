@@ -17,7 +17,6 @@ namespace IktatoMSSql.Forms
         public LevelekDatumonkentForm()
         {
             InitializeComponent();
-            //SetDatumComboFilter();
         }
 
         private void iktatBindingNavigatorSaveItem_Click(object sender, EventArgs e)
