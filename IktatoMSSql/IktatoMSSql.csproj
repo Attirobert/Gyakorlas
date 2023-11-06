@@ -71,6 +71,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>IktatoTetelDS.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSets\DatumComboDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatumComboDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BeosztasokForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +324,17 @@
     </None>
     <None Include="DataSets\LevelekOsszetettSzureseDS.xss">
       <DependentUpon>LevelekOsszetettSzureseDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatumComboDS.xsc">
+      <DependentUpon>DatumComboDS.xsd</DependentUpon>
+    </None>
+    <None Include="DataSets\DatumComboDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatumComboDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSets\DatumComboDS.xss">
+      <DependentUpon>DatumComboDS.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -16,7 +16,7 @@ namespace Iktato.Data
 
         private string server, 
             database,
-            Uid,
+            uid,
             password;
 
         public void Initialize()
