@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Iktato
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         Data.Connection con=new Data.Connection();
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             label1.Text= String.Empty;
