@@ -39,7 +39,8 @@
             this.kimutatásokToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.címzettekLeveleiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.levelekDátumSzerintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tesztToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.összetettKeresésToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.levelekBármelyDátumSzerintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,8 +51,7 @@
             this.személyekToolStripMenuItem,
             this.osztályokToolStripMenuItem,
             this.beosztásokToolStripMenuItem,
-            this.kimutatásokToolStripMenuItem,
-            this.tesztToolStripMenuItem});
+            this.kimutatásokToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -114,7 +114,9 @@
             // 
             this.kimutatásokToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.címzettekLeveleiToolStripMenuItem,
-            this.levelekDátumSzerintToolStripMenuItem});
+            this.levelekDátumSzerintToolStripMenuItem,
+            this.levelekBármelyDátumSzerintToolStripMenuItem,
+            this.összetettKeresésToolStripMenuItem});
             this.kimutatásokToolStripMenuItem.Name = "kimutatásokToolStripMenuItem";
             this.kimutatásokToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.kimutatásokToolStripMenuItem.Text = "Kimutatások";
@@ -124,19 +126,28 @@
             this.címzettekLeveleiToolStripMenuItem.Name = "címzettekLeveleiToolStripMenuItem";
             this.címzettekLeveleiToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.címzettekLeveleiToolStripMenuItem.Text = "Címzettek levelei";
+            this.címzettekLeveleiToolStripMenuItem.Click += new System.EventHandler(this.címzettekLeveleiToolStripMenuItem_Click);
             // 
             // levelekDátumSzerintToolStripMenuItem
             // 
             this.levelekDátumSzerintToolStripMenuItem.Name = "levelekDátumSzerintToolStripMenuItem";
-            this.levelekDátumSzerintToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.levelekDátumSzerintToolStripMenuItem.Text = "Levelek dátum szerint";
+            this.levelekDátumSzerintToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
+            this.levelekDátumSzerintToolStripMenuItem.Text = "Levelek szűrése iktatási dátum szerint";
+            this.levelekDátumSzerintToolStripMenuItem.Click += new System.EventHandler(this.levelekDátumSzerintToolStripMenuItem_Click);
             // 
-            // tesztToolStripMenuItem
+            // összetettKeresésToolStripMenuItem
             // 
-            this.tesztToolStripMenuItem.Name = "tesztToolStripMenuItem";
-            this.tesztToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.tesztToolStripMenuItem.Text = "Teszt";
-            this.tesztToolStripMenuItem.Click += new System.EventHandler(this.tesztToolStripMenuItem_Click);
+            this.összetettKeresésToolStripMenuItem.Name = "összetettKeresésToolStripMenuItem";
+            this.összetettKeresésToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
+            this.összetettKeresésToolStripMenuItem.Text = "Szöveges szűrés";
+            this.összetettKeresésToolStripMenuItem.Click += new System.EventHandler(this.összetettKeresésToolStripMenuItem_Click);
+            // 
+            // levelekBármelyDátumSzerintToolStripMenuItem
+            // 
+            this.levelekBármelyDátumSzerintToolStripMenuItem.Name = "levelekBármelyDátumSzerintToolStripMenuItem";
+            this.levelekBármelyDátumSzerintToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
+            this.levelekBármelyDátumSzerintToolStripMenuItem.Text = "Levelek szűrése bármely dátum szerint";
+            this.levelekBármelyDátumSzerintToolStripMenuItem.Click += new System.EventHandler(this.levelekBármelyDátumSzerintToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -167,7 +178,8 @@
         private System.Windows.Forms.ToolStripMenuItem iktatóLapToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem címzettekLeveleiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem levelekDátumSzerintToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tesztToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem összetettKeresésToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem levelekBármelyDátumSzerintToolStripMenuItem;
     }
 }
 

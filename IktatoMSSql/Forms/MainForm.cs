@@ -59,5 +59,29 @@ namespace IktatoMSSql
             Teszt frm = new Teszt();
             frm.ShowDialog();
         }
+
+        private void címzettekLeveleiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CimzettekLeveleiForm frm = new CimzettekLeveleiForm();
+            frm.ShowDialog();
+        }
+
+        private void levelekDátumSzerintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LevelekDatumonkentForm frm = new LevelekDatumonkentForm();
+            frm.ShowDialog();
+        }
+
+        private void levelekBármelyDátumSzerintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LevelekDatumonkent2Form frm = new LevelekDatumonkent2Form();
+            frm.ShowDialog();
+        }
+
+        private void összetettKeresésToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LevelekSzureseForm frm = new LevelekSzureseForm();
+            frm.ShowDialog();
+        }
     }
 }
