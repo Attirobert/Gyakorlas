@@ -8,24 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Iktato.Data
+namespace Iktato
 {
-    internal class Connection
+    public class MySqlDatabaseManager
     {
         private MySqlConnection connection;
 
-        private string server, 
-            database,
-            uid,
-            password;
+        private string connectionString;
 
-        public void Initialize()
+        public MySqlDatabaseManager(string server, string database, string uid, string password)
         {
-            server = "127.0.0.1"; 
-            database = "iktato"; 
-            uid = "root"; 
-            password = ""; 
-            string connectionString = $"SERVER={server};DATABASE={database};UID={uid};PASSWORD={password};";
+            connectionString = $"SERVER={server};DATABASE={database};UID={uid};PASSWORD={password};";
 
             connection = new MySqlConnection(connectionString);
         }
@@ -46,9 +39,9 @@ namespace Iktato.Data
             }
         }
 
-        public void FillDataGridView(DataGridView dgv)
+        public DataTable GetDataTable(string query)
         {
-            string query = "SELECT * FROM yourTableName"; // helyettesítsd a tábla nevével
+            DataTable dataTable = new DataTable();
 
             try
             {
@@ -56,19 +49,45 @@ namespace Iktato.Data
                 MySqlCommand cmd = new MySqlCommand(query, connection);
 
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(cmd);
-                DataTable dataTable = new DataTable();
                 dataAdapter.Fill(dataTable);
-
-                dgv.DataSource = dataTable; 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hiba történt: " + ex.Message);
+                Console.WriteLine("Hiba történt: " + ex.Message);
             }
             finally
             {
                 CloseConnection();
             }
+
+            return dataTable;
+        }
+
+        public int ExecuteNonQuery(string query)
+        {
+            int result = 0;
+
+            try
+            {
+                OpenConnection();
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hiba történt: " + ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+
+            return result;
+        }
+
+        public void FillDataGridView(DataGridView dgv, string query)
+        {
+                dgv.DataSource = GetDataTable(query); 
         }
 
 
