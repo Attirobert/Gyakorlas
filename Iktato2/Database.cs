@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 
@@ -30,21 +29,6 @@ namespace Iktato2
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        public bool open_db()
-        {
-            try
-            {
-                mySqlConnection.Open();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
                 return false;
             }
         }
@@ -58,7 +42,6 @@ namespace Iktato2
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
                 return false;
             }
         }

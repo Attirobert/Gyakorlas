@@ -47,6 +47,10 @@ namespace Iktato2
 
                 database.close_db();
             }
+            else
+            {
+                MessageBox.Show("Nem sikerült kapcsolódni az adatbázishoz!");
+            }
         }
     }
 }
