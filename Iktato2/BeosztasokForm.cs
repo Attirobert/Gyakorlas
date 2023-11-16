@@ -49,7 +49,7 @@ namespace Iktato2
             }
             else
             {
-                MessageBox.Show("Nem sikerült kapcsolódni az adatbázishoz!");
+                MessageBox.Show($"Nem sikerült kapcsolódni az adatbázishoz!");
             }
         }
     }
