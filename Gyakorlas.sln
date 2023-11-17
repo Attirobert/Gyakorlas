@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iktato2", "Iktato2\Iktato2.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iktato3", "Iktato3\Iktato3.csproj", "{E790D2E8-6C34-4122-970B-23A97A7B3F9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBConnectPelda", "DBConnectPelda\DBConnectPelda.csproj", "{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{E790D2E8-6C34-4122-970B-23A97A7B3F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E790D2E8-6C34-4122-970B-23A97A7B3F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E790D2E8-6C34-4122-970B-23A97A7B3F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -183,6 +189,7 @@ Global
 		{8FCFF022-4C82-4A95-9784-3E49CBC9E1E7} = {D62E5131-A070-44D8-8B9D-8F1C7C24B523}
 		{CD2939C0-453F-417D-99A0-EA33D3E8F1D3} = {4667A35D-4FD1-4C2B-B666-214422C2FE70}
 		{E790D2E8-6C34-4122-970B-23A97A7B3F9D} = {4667A35D-4FD1-4C2B-B666-214422C2FE70}
+		{838C69E9-6918-4BA8-A6E3-C7FC4B80D0A9} = {D62E5131-A070-44D8-8B9D-8F1C7C24B523}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCF25FFC-AE53-4BDA-8FE4-E42209FD25AE}

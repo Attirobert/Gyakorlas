@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("04-OfType")]
+[assembly: AssemblyTitle("DBConnectPelda")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("04-OfType")]
+[assembly: AssemblyProduct("DBConnectPelda")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d63dc703-11c2-43a4-ab1b-51ace215e5c0")]
+[assembly: Guid("838c69e9-6918-4ba8-a6e3-c7fc4b80d0a9")]
 
 // Version information for an assembly consists of the following four values:
 //
