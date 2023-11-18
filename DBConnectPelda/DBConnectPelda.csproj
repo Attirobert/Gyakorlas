@@ -102,5 +102,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GetDBConnection\GetDBConnection.csproj">
+      <Project>{55634611-7b17-46d2-86b0-571b19637347}</Project>
+      <Name>GetDBConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
