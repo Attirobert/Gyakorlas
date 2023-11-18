@@ -5,18 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using GetDBConnection;
 
 namespace Iktato2
 {
-    internal class Database
-    {
-        static readonly string server = "127.0.0.1",
-            user = "root",
-            password = "",
-            database="iktato";
-
-        public static string connection_string = $"SERVER='{server}'; USER='{user}'; DATABASE='{database}'; PASSWORD='{password}'";
-        public MySqlConnection mySqlConnection = new MySqlConnection(connection_string);
+    internal class Database 
+    { 
+        public MySqlConnection mySqlConnection = new MySqlConnection(DBConnectionsClass.GetConnectionString_1("MyDbConnection"));
 
         public Database() { }
 
@@ -35,15 +30,18 @@ namespace Iktato2
 
         public bool close_db()
         {
-            try
+            if (mySqlConnection != null & mySqlConnection.State == System.Data.ConnectionState.Open)
             {
-                mySqlConnection.Close();
-                return true;
+                try
+                {
+                    mySqlConnection.Close();
+                }
+                catch (Exception ex)
+                {
+                    return false;
+                }
             }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            return true;
         }
     }
 }

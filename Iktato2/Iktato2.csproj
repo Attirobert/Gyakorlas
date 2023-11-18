@@ -98,6 +98,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BeosztasClass.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="BeosztasokForm.cs">
       <SubType>Form</SubType>
@@ -132,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GetDBConnection\GetDBConnection.csproj">
+      <Project>{55634611-7b17-46d2-86b0-571b19637347}</Project>
+      <Name>GetDBConnection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

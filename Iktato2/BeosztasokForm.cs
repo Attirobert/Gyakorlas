@@ -21,15 +21,14 @@ namespace Iktato2
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            loadData();
+            loadData("SELECT * FROM beosztasok", dataGridView);
         }
 
-        private void loadData()
+        private void loadData(string query, DataGridView dgv)
         {
             Database database = new Database();
             if (database.connect_db())
             {
-                string query = "SELECT * FROM beosztasok";
                 MySqlCommand mySqlCommand = new MySqlCommand(query);
                 mySqlCommand.CommandType = CommandType.Text;
                 mySqlCommand.CommandText = query;
@@ -43,7 +42,7 @@ namespace Iktato2
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = dt;
 
-                dataGridView.DataSource = bindingSource;
+                dgv.DataSource = bindingSource;
 
                 database.close_db();
             }
