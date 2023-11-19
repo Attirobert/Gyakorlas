@@ -11,6 +11,7 @@ namespace Iktato2
 {
     internal class Database 
     { 
+        // Ez az osztály végzi az adatbázis nyitását, zárását
         public MySqlConnection mySqlConnection = new MySqlConnection(DBConnectionsClass.GetConnectionString_1("MyDbConnection"));
 
         public Database() { }
